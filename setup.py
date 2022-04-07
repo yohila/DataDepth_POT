@@ -46,7 +46,7 @@ if sys.platform.startswith('darwin'):
     os.environ['CFLAGS'] = '-isysroot "{}"'.format(sdk_path.rstrip().decode("utf-8"))
 
 setup(
-    name='POT',
+    name='ddalpha',
     version=__version__,
     description='Python Optimal Transport Library',
     long_description=README,
