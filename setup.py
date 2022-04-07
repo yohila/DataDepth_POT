@@ -57,9 +57,9 @@ setup(
     packages=find_packages(exclude=["benchmarks"]),
     ext_modules=cythonize(Extension(
         name="ddalpha",
-        sources=["ddalpha/lp/ddalpha.cpp"],  # cython/c++ src files
+        sources=["ddalpha\lp\ddalpha.cpp"],  # cython/c++ src files
         language="c++",
-        include_dirs=[numpy.get_include(), os.path.join(ROOT, 'ddalpha/lp')],
+        include_dirs=[numpy.get_include(), os.path.join(ROOT, 'ddalpha\lp')],
         extra_compile_args=compile_args,
         extra_link_args=link_args
     )),
